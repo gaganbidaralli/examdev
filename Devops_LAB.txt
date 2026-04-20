@@ -318,7 +318,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git '<your-repo>'
+                git branch: 'main', url: '<your-repo>'
             }
         }
         stage('Build Docker Image') {
